@@ -1,13 +1,18 @@
-let diez="#";
-// for(let count = 1; count <=nbetage; count++){
-//     console.log(diez.repeat(count));
-//   }
-  
+const x = prompt(
+  "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?",
+  "écris un chiffre"
+);
 
-var nb = prompt("cb d'etage tu veux ");
-var x=0;
-let espace=" ";
-for(nb ; nb>=0 ; nb --){
-    x++;
-    console.log(espace.repeat(nb)+diez.repeat(x));
+for (let i = 1; i <= x; i++) {
+  let fact = "";
+
+  for (let j = 1; j <= x - i; j++) {
+    fact += " ";
   }
+
+  for (let k = 1; k <= i; k++) {
+    fact += "#";
+  }
+
+  console.log(fact);
+}

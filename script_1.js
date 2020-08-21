@@ -1,3 +1,5 @@
-console.log("Bonjour Monde !");
-let firstName = prompt("Quel est ton prénom?");
-console.log("Bonjour" +" "+ firstName);
+const person = prompt("Bonjour comment tu s'appelles ?", "Name");
+
+if (person != null) {
+  console.log("Bonjour " + person + "!");
+}

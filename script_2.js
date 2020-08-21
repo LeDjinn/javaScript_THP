@@ -1,13 +1,11 @@
-let nbr = prompt("De quel nombre veux-tu calculer la factorielle ?");
+const x = prompt(
+  "De quel nombre veut tu calculer la factorielle ?",
+  "écris un chiffre"
+);
 
-function fact(nbr) {
-
-  if (nbr === 0)
-  {
-     return 1;
-  }
-
-  return nbr * fact(nbr-1);
+let fact = 1;
+for (let i = 1; i <= x; i++) {
+  fact = fact * i;
 }
 
-console.log(fact(nbr));
+console.log("Le résultat est:" + fact);
